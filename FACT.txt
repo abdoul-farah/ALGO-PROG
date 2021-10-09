@@ -1,0 +1,51 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+		nbr      le nombre dont on calcule le factorielle
+		fact     le factorielle de nbr
+		reponse 
+Initialisation :
+
+
+	
+	
+	Ecrire("Voulez-vous introduire un nombre  OUI ou NON")
+	Lire (reponse)
+	
+	
+	Tant Que(reponse==OUI)
+	
+
+		Ecrire ("Veuillez intrduire un nombre")
+		Lire (nbr)
+		
+		if (nbr==0 OU nbr==1)
+			then Ecrire(le factorielle de nbr est : 1)
+		end if 
+		
+		
+		Cpt=1
+		
+		fact=nbr
+		
+		if(nbr>=2)
+			Tant Que (Cpt<=nbr-1)
+				
+				fact = fact*(nbr-Cpt)
+				
+				Cpt=Cpt+1 
+			
+			Fin Tant Que 
+			
+			
+			Ecrire ("Le factorielle de nbr est : ", fact    )
+			
+			
+			Ecrire ("Voulez-vous une nouvelle valeur OUI ou NON ?")
+			Lire (Reponse)
+		end if 
+	Fin Tant Que
+	
+	
+Fin Algorithme 

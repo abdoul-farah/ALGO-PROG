@@ -1,0 +1,95 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+		tab[15]   : un tableau de taille 15
+		i         : index du tableau tab 
+		reponse   : OUI/NON
+		
+		
+		postmax   :  position max
+        postmin	  :  position min 
+	
+		max	      :  le maximum	
+		min	      :  le minimum 
+		cpt       : compteur 
+		
+		ISPremierValeur : indique si la première valeur a déjà été traitée
+
+Initialisation :
+
+
+		i=0
+		
+		Tant Que i<15
+			
+			tab[i]=0
+			i=i+1
+			
+		Fin Tant Que
+	
+		
+		----------------------------------------------------------------
+		
+		Ecrire("Voulez-vous introduire un nombre  OUI ou NON")
+		Lire (reponse)
+			
+			
+		cpt=-1;
+		
+		Tant Que (reponse==OUI) && (cpt<15)
+		
+			cpt=cpt+1
+			
+			Ecrire ("Veuillez intrduire une valeur")
+			Lire (tab[cpt])
+			
+			
+			
+			if(cpt==0)
+				then max=tab[0]
+					 min=tab[0]
+					 postmax=0
+					 postmin=0
+				
+			else
+
+			
+				if(tab[cpt]>max)
+					then max=tab[cpt]
+					postmax=cpt
+				end if 
+				
+				
+				if(tab[cpt]<min)
+					then min=tab[cpt]
+					postmax=cpt
+				end if 
+				
+			end if
+			
+			Ecrire ("Voulez-vous introuduire une nouvelle valeur OUI ou NON ?")
+			Lire (Reponse)
+			
+			
+				
+		Fin Tant Que
+		
+		
+			Ecrire("La valeur maximale est ",max," et est à la position", postmax)
+			Ecrire("La valeur minimale est ",min," et est à la position", postmin)
+		
+		
+		
+		j=0
+		
+		Tant Que (j<cpt)
+			Ecrire ("Les valeurs introduites sont : ", tab[j])
+			
+			j=j+1
+		Fin Tant Que
+		
+			
+		
+
+Fin Algorithme 
