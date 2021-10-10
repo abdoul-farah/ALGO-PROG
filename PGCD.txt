@@ -18,10 +18,10 @@ Initialisation :
 	min
 	
 	if(B>A)
-		then max=B
-             min=A
-             A=max
-			 B=min
+		then 	  max=B
+           		  min=A
+                          A=max
+			  B=min
 	end if
 	
 	
