@@ -3,7 +3,7 @@ Debut de l'algorithme
 Variables : 
 	A
 	B
-	R
+	R    Reste de la division de A par B
 Initialisation :
 
 
@@ -14,6 +14,21 @@ Initialisation :
 	Ecrire("Entrez un nombre")
 	Lire(B)
 	
+	max
+	min
+	
+	if(B>A)
+		then max=B
+             min=A
+             A=max
+			 B=min
+	end if
+	
+	
+	A = max(A,B)
+			B = min(A,B)
+    
+	
 	Tant Que(B !=0)
 	
 		R = A % B
@@ -22,5 +37,7 @@ Initialisation :
 
 
 	Fin Tant Que
+	
+	Ecrire("Le PGCD est ", B)
 
 Fin Algorithme 
