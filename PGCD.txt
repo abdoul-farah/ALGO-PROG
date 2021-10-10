@@ -24,9 +24,7 @@ Initialisation :
 			  B=min
 	end if
 	
-	
-	A = max(A,B)
-			B = min(A,B)
+
     
 	
 	Tant Que(B !=0)
