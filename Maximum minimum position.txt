@@ -1,0 +1,79 @@
+Debut de l'algorithme 
+
+Variables : 
+		reponse
+		nbr 
+		postmax     position max
+                postmin	    position min 
+		post        compteur de la boucle tant que 	
+		max	    le maximum	
+		min	    le minimum 
+		
+
+        
+
+       
+		
+Initialisation :
+
+
+
+	Ecrire("Voulez-vous introduire un nombre  OUI ou NON")
+	Lire (reponse)
+	
+	
+	
+
+	postmax=0
+	postmin=0
+	post=0
+
+
+	
+	
+		Tant Que(reponse==OUI)
+	
+			Ecrire ("Veuillez intrduire un nombre")
+			Lire (nbr)
+			
+			post=post+1
+
+			if(post==1)
+				then max=nbr
+					 min=nbr
+					 postmax=1
+					 postmin=1
+			
+
+			else 
+				if(nbr>max)
+					then max=nbr
+					postmax=post
+				end if
+				
+				if(nbr<min)
+					then min=nbr
+					postmin=post
+				end if
+				
+			end if
+			
+		
+		
+			Ecrire("La valeur maximale est ",max," et est à la position", postmax)
+			Ecrire("La valeur minimale est ",min," et est à la position", postmin)
+		
+		
+		
+		
+			Ecrire ("Voulez-vous une nouvelle valeur OUI ou NON ?")
+			Lire (Reponse)
+	
+		Fin Tant Que
+	
+
+
+
+Fin Algorithme
+
+

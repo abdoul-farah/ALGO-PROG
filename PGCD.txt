@@ -1,0 +1,26 @@
+Debut de l'algorithme 
+
+Variables : 
+	A
+	B
+	R
+Initialisation :
+
+
+	Ecrire("Entrez un nombre")
+	Lire(A)
+
+
+	Ecrire("Entrez un nombre")
+	Lire(B)
+	
+	Tant Que(B !=0)
+	
+		R = A % B
+		A = B
+		B = R
+
+
+	Fin Tant Que
+
+Fin Algorithme 

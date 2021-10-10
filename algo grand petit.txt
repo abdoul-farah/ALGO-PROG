@@ -1,0 +1,36 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+		reponse 
+		max
+		min
+		nbr
+Initialisation :
+
+
+	Ecrire("Voulez-vous commencer OUI / NON ?")
+	Lire(reponse
+	
+	max=20
+	min=10
+	
+	Tant Que(reponse=="OUI")
+	
+		Ecrire("Entrez un nombre")
+		Lire(nbr)
+			
+			
+		if(nbr<=max ET nbr>=min)
+			then Ecrire("Le nombre saisi est dans les bornes")
+				 reponse="NON"
+				
+		else if (nbr<min)
+			then Ecrire("Plus Grand !")
+				 reponse="OUI"
+		else
+			Ecrire("Plus Petit !")
+			reponse="OUI"
+		end if 
+	
+	Fin Tant Que
