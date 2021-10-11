@@ -47,7 +47,7 @@ Initialisation :
 			
 			
 			if(cpt==0)
-				then max=tab[0]
+				then     max=tab[0]
 					 min=tab[0]
 					 postmax=0
 					 postmin=0
