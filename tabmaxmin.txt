@@ -8,7 +8,7 @@ Variables :
 		
 		
 		postmax   :  position max
-        postmin	  :  position min 
+                postmin	  :  position min 
 	
 		max	      :  le maximum	
 		min	      :  le minimum 
