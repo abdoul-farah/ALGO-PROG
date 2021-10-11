@@ -35,11 +35,11 @@ Initialisation :
 		Lire (reponse)
 			
 			
-		cpt=-1;
+		cpt=0;
 		
 		Tant Que (reponse==OUI) && (cpt<15)
 		
-			cpt=cpt+1
+			
 			
 			Ecrire ("Veuillez intrduire une valeur")
 			Lire (tab[cpt])
@@ -67,6 +67,8 @@ Initialisation :
 				end if 
 				
 			end if
+			
+			cpt=cpt+1
 			
 			Ecrire ("Voulez-vous introuduire une nouvelle valeur OUI ou NON ?")
 			Lire (Reponse)
