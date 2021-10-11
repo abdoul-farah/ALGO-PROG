@@ -1,0 +1,37 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+	
+		chiffre
+
+        
+
+       
+		
+Initialisation :
+
+
+		Ecrire ("Veuillez intrduire un chiffre de 1 à 9")
+		Lire (chiffre)
+		
+		Tant Que(chiffre<=0 ET  chiffre>9)
+			
+			Ecrire ("Oups ! Veuillez à intrduire un chiffre de 1 à 9")
+			Lire (chiffre)
+			
+		Fin Tant Que
+		
+		terme=1 
+		
+		Tant Que(terme<=9)
+		
+			Ecrire(terme*chiffre)
+			terme=terme+1
+			
+		Fin Tant Que
+
+
+
+
+Fin Algorithme
