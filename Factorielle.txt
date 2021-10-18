@@ -10,11 +10,11 @@ Initialisation :
 
 	
 	
-	Ecrire("Voulez-vous introduire un nombre  OUI ou NON")
+	Ecrire("Voulez-vous commencer OUI / NON ?")
 	Lire (reponse)
 	
 	
-	Tant Que(reponse==OUI)
+	Tant Que(reponse=="OUI")
 	
 
 		Ecrire ("Veuillez intrduire un nombre")
@@ -44,6 +44,7 @@ Initialisation :
 			
 			Ecrire ("Voulez-vous une nouvelle valeur OUI ou NON ?")
 			Lire (Reponse)
+			
 		end if 
 	Fin Tant Que
 	

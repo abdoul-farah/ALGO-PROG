@@ -4,6 +4,10 @@ Variables :
 	A
 	B
 	R    Reste de la division de A par B
+	
+	max
+	min
+	
 Initialisation :
 
 
@@ -14,13 +18,12 @@ Initialisation :
 	Ecrire("Entrez un nombre")
 	Lire(B)
 	
-	max
-	min
+	
 	
 	if(B>A)
-		then 	  max=B
-           		  min=A
-                          A=max
+		then  max=B
+           	  min=A
+              A=max
 			  B=min
 	end if
 	

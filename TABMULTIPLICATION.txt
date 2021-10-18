@@ -4,6 +4,7 @@ Variables :
 	
 	
 		chiffre
+		terme
 
         
 
