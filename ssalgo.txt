@@ -1,0 +1,55 @@
+Debut de l'algorithme 
+
+Variables : 
+
+		nb1
+		nb2
+		nb3
+		nb4
+		nb5
+		Som
+		resultat
+		
+Initialisation :
+
+Algorithme : 
+
+	Ecrire ("Veuillez entrer le 1er nombre")
+	Lire(nb1)
+	
+	Ecrire ("Veuillez entrer le 2e nombre")
+	Lire(nb2)
+	
+	Ecrire ("Veuillez entrer le 3e nombre")
+	Lire(nb3)
+	
+	Ecrire ("Veuillez entrer le 4e nombre")
+	Lire(nb4)
+	
+	Ecrire ("Veuillez entrer le 5e nombre")
+	Lire(nb5)
+
+	resultat = Call Somme nb1, nb2, nb3, nb4, nb5, Som
+	
+	Ecrire("La somme des 5 nombres est :", resultat)
+
+
+Fin Algorithme
+
+--------------------------------------------------
+
+
+Debut du Sous-Algorithme Somme nb1, nb2, nb3, nb4, nb5, Som
+		Paramètres : 
+			nb1
+			nb2
+			nb3
+			nb4
+			nb5
+			Som : la somme 
+		Initialisation :	
+		Algorithme	
+			
+			Som=nb1+nb2+nb3+nb4+nb5
+	
+Fin du Sous-Algorithme
