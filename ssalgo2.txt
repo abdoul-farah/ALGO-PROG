@@ -7,9 +7,6 @@ Variables :
 	
 Initialisation 
 
-
-	
-
 Algorithme	
 	i=0
 	
@@ -17,19 +14,9 @@ Algorithme
 		Ecrire ("Veuillez intrduire une valeur")
 		Lire (tab[i])
 		i=i+1
-	Fin Tant Que 
-	
-	
-	
+	Fin Tant Que 	
 
 	Call TabTrier tab[N],  IsTrier
-	
-	
-
-		
-		
-zetuiyhuezyuezhyu
-
 
 Fin Algorithme
 -------------------------------------
