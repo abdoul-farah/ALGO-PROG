@@ -1,0 +1,84 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+	
+		
+ 
+		
+Initialisation :
+
+
+
+
+
+
+
+
+
+Fin Algorithme
+
+--------------------------------------------------------------
+
+Debut du Sous-Algorithme LirePhrase N phrase
+
+	Paramètres : N taille du tableau 
+	
+
+	Ecrire ("Veuillez intrduire une phrase de maximum N caractères :")
+	
+	nbc=0
+	isPoint=false
+	
+	Tant Que isPoint==false OU (nbc<N)
+	
+		Lire phrase[nbc]
+		
+		if phrase[nbc]=="." OU phrase[nbc]=="!" OU phrase[nbc]=="?" 
+			then isPoint=true
+		end if
+	
+		nbc=nbc+1
+	Fin Tant Que
+
+
+Fin du Sous-Algorithme
+
+---------------------------------------------------
+
+
+Debut du Sous-Algorithme CompteurVoyelles N cpta cpte cpti cpto cptu 
+
+	Paramètres : N taille du tableau 
+				tab tableau de taille N
+	
+	
+	i=0
+	cpta=0
+	cpte=0
+	cpti=0
+	cpto=0
+	cptu=0
+	Tant Que (i<N)
+	
+		if tab[i]=="a"
+			then cpta=cpta+1
+		
+		else if  tab[i]=="e"
+			then cpte=cpte+1
+			
+		else if  tab[i]=="i"
+			then cpti=cpti+1
+		
+		else if  tab[i]=="o"
+			then cpto=cpto+1
+			
+		else if  tab[i]=="u"
+			then cptu=cptu+1
+		
+		end if 
+		
+		i=i+1
+	Fin Tant Que
+	
+Fin du Sous-Algorithme
