@@ -29,9 +29,9 @@ Algorithme :
 	Ecrire ("Veuillez entrer le 5e nombre")
 	Lire(nb5)
 
-	resultat = Call Somme nb1, nb2, nb3, nb4, nb5, Som
+	Call Somme nb1, nb2, nb3, nb4, nb5, Som
 	
-	Ecrire("La somme des 5 nombres est :", resultat)
+	Ecrire("La somme des 5 nombres est :", Som)
 
 
 Fin Algorithme

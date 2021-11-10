@@ -3,6 +3,7 @@ Debut de l'algorithme
 Variables : 
 	
 	
+	PHR Tableau contenant une phrase
 		
  
 		
@@ -10,7 +11,9 @@ Initialisation :
 
 
 
+PHR=CALL LirePhrase ()
 
+CALL CompteurVoyelles(PHR)
 
 
 
@@ -20,26 +23,34 @@ Fin Algorithme
 
 --------------------------------------------------------------
 
-Debut du Sous-Algorithme LirePhrase N phrase
+Debut du Sous-Algorithme LirePhrase
 
-	Paramètres : N taille du tableau 
+	Paramètres 
+			NN :  taille de la phrase 
+			phrase : tableau contenant une phrase 
+			
+				
+	Variables 
+		nbc : compteur 
+		isPoint : pour savoir si un point a été introduit par l'utilisateur 
 	
-
-	Ecrire ("Veuillez intrduire une phrase de maximum N caractères :")
+	Algorithme
 	
 	nbc=0
 	isPoint=false
 	
-	Tant Que isPoint==false OU (nbc<N)
+	Ecrire ("Veuillez introduire une phrase caractère par caractère")
+	Lire phrase[nbc]
 	
-		Lire phrase[nbc]
-		
-		if phrase[nbc]=="." OU phrase[nbc]=="!" OU phrase[nbc]=="?" 
-			then isPoint=true
-		end if
+	Tant Que phrase[nbc]=="." et phrase[nbc]=="!" et phrase[nbc]=="?"  et (nbc<100)
+
 	
 		nbc=nbc+1
+		Lire phrase[nbc]
 	Fin Tant Que
+	
+	
+	
 
 
 Fin du Sous-Algorithme
@@ -47,11 +58,20 @@ Fin du Sous-Algorithme
 ---------------------------------------------------
 
 
-Debut du Sous-Algorithme CompteurVoyelles N cpta cpte cpti cpto cptu 
+Debut du Sous-Algorithme CompteurVoyelles  
 
-	Paramètres : N taille du tableau 
-				tab tableau de taille N
+	Paramètres 
+		
+		tab : tableau contenant une phrase 
+		
+		cpta cpte cpti cpto cptu  : compteurs des voyelles  
 	
+	
+	Variables
+	
+		i : entier 
+	
+	Algorithme
 	
 	i=0
 	cpta=0
@@ -59,7 +79,7 @@ Debut du Sous-Algorithme CompteurVoyelles N cpta cpte cpti cpto cptu
 	cpti=0
 	cpto=0
 	cptu=0
-	Tant Que (i<N)
+	Tant Que (not tab[i]=='\0')
 	
 		if tab[i]=="a"
 			then cpta=cpta+1
