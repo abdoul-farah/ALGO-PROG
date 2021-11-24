@@ -1,0 +1,124 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+	année : année introduite par l'utilisateur 
+	IsBissextile : OUI/NON booléenne pour savoir si une année est bissextile ou non 	
+	nbjour : nombre de jour d'une année quelconque 
+	
+	nbjourdumois : tableau de taille 12 
+	tempmoymois : tableau de taille 12 contenant la température moyenne de chaque mois 
+ 
+		
+Initialisation :
+
+
+	Ecrire("Veuillez entrer une année")
+	Lire (année)
+	
+	
+	Call Bissextile(année, IsBissextile)
+	
+	if(IsBissextile=="OUI")
+		then nbjour=366
+		else nbjour=365
+	end if 
+	
+	Call InitTemp(temp, année, nbjour, minmax )    //     temp tableau , nbjour taille1, minmax taille2          temp[nbjour][minmax] = temp[366][2] OU temp[365][2] 
+	
+	
+	
+
+	
+	if (IsBissextile=="OUI")
+		then nbjourdumois[0]=31
+			nbjourdumois[1]=29
+			nbjourdumois[2]=31
+			nbjourdumois[3]=30
+			nbjourdumois[4]=31
+			nbjourdumois[5]=30
+			nbjourdumois[6]=31
+			nbjourdumois[7]=31
+			nbjourdumois[8]=30
+			nbjourdumois[9]=31
+			nbjourdumois[10]=30
+			nbjourdumois[11]=31
+			
+			else 
+	
+			nbjourdumois[0]=31
+			nbjourdumois[1]=28
+			nbjourdumois[2]=31
+			nbjourdumois[3]=30
+			nbjourdumois[4]=31
+			nbjourdumois[5]=30
+			nbjourdumois[6]=31
+			nbjourdumois[7]=31
+			nbjourdumois[8]=30
+			nbjourdumois[9]=31
+			nbjourdumois[10]=30
+			nbjourdumois[11]=31
+	
+	
+	end if 
+	
+	i=0
+	j=0
+	k=0
+	
+	somtemp=0
+	NN=0
+	Tant Que (k<12)	
+		Tant Que (i+NN<=NN+nbjourdumois[k]-1)
+		
+			Tant Que (j<=1)
+			
+						
+				somtemp=somtemp+temp[i][j]
+				
+				j=j+1	
+			Fin Tant Que
+			j=0	
+					
+			i=i+1	
+			
+		Fin Tant Que 
+		
+		tempmoymois[k]=somtemp/(2*nbjourdumois[k])
+	
+		k=k+1
+		NN=NN+nbjourdumois[k]
+	Fin Tant Que 
+	
+	
+	
+	
+	Tant Que (k<12)
+		Ecrire(Tempmoymois[k])
+		k=k+1
+	Fin Tant Que
+	
+	
+Fin Algorithme
+-------------------------------------
+	
+	
+	
+	i+NN+1<NN+nbjourdumois[k]
+
+
+-------------------------------------------------
+POUR UNE ANNEE BISSEXTILE
+	
+	Tempmois[0] = temp[0-30][0-1]
+	Tempmois[1] = temp[31-59][0-1]
+	Tempmois[2] = temp[60-90][0-1]
+	Tempmois[3] = temp[91-120][0-1]
+	Tempmois[4] = temp[121-151][0-1]
+	Tempmois[5] = temp[152-181][0-1]
+	Tempmois[6] = temp[182-212][0-1]
+    Tempmois[7] = temp[213-243][0-1]
+    Tempmois[8] = temp[244-273][0-1]	
+	Tempmois[9] = temp[274-304][0-1]
+    Tempmois[10] = temp[305-334][0-1]
+    Tempmois[11] = temp[335-365][0-1]   
