@@ -1,0 +1,42 @@
+Debut de l'algorithme 
+
+Variables : 
+	
+	année : année introduite par l'utilisateur 
+	IsBissextile : OUI/NON booléenne pour savoir si une année est bissextile ou non 	
+	nbjour : nombre de jour d'une année quelconque 
+ 
+		
+Initialisation :
+
+
+	Ecrire("Veuillez entrer une année")
+	Lire (année)
+	
+	
+	Bissextile(année, IsBissextile)
+	
+	if(IsBissextile=="OUI")
+		then nbjour=366
+		else nbjour=365
+	end if 
+	
+	InitTemp(temp, année, nbjour, minmax )    // temp[nbjour][minmax] = temp[366][2] OU temp[365][2] 
+	
+	
+	POUR UNE ANNEE BISSEXTILE
+	
+	Tempmois[0] = temp[0-30][0-1]
+	Tempmois[1] = temp[31-59][0-1]
+	Tempmois[2] = temp[60-90][0-1]
+	Tempmois[3] = temp[91-120][0-1]
+	Tempmois[4] = temp[121-151][0-1]
+	Tempmois[5] = temp[152-181][0-1]
+	Tempmois[6] = temp[182-212][0-1]
+    Tempmois[7] = temp[213-243][0-1]
+    Tempmois[8] = temp[244-273][0-1]	
+	Tempmois[9] = temp[274-304][0-1]
+    Tempmois[10] = temp[305-334][0-1]
+    Tempmois[11] = temp[335-365][0-1]   
+
+Fin Algorithme
